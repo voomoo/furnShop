@@ -200,7 +200,7 @@
                 <h5>$149.99</h5>
                 <p>$180</p>
               </div>
-              <img src="./images/lamp1.png" alt="" />
+              <img src="./images/lamp1.png" alt="" data-aos="zoom-in"/>
             </div>
           </div>
           <div class="col-12 col-lg-4 filtr-item" data-category="3">
@@ -210,7 +210,7 @@
                 <h5>$119.99</h5>
                 <p>$150</p>
               </div>
-              <img src="./images/chair1.png" alt="" />
+              <img src="./images/chair1.png" alt="" data-aos="zoom-in"/>
             </div>
           </div>
           <div class="col-12 col-lg-4 filtr-item" data-category="2">
@@ -220,7 +220,7 @@
                 <h5>$249.99</h5>
                 <p>$280</p>
               </div>
-              <img src="./images/sofa1.png" alt="" />
+              <img src="./images/sofa1.png" alt="" data-aos="zoom-in"/>
             </div>
           </div>
           <div class="col-12 col-lg-4 filtr-item" data-category="2">
@@ -230,7 +230,7 @@
                 <h5>$329.99</h5>
                 <p>$380</p>
               </div>
-              <img src="./images/sofa2.png" alt="" />
+              <img src="./images/sofa2.png" alt="" data-aos="zoom-in"/>
             </div>
           </div>
           <div class="col-12 col-lg-4 filtr-item" data-category="1">
@@ -240,7 +240,7 @@
                 <h5>$99.99</h5>
                 <p>$120</p>
               </div>
-              <img src="./images/vase1.png" alt="" />
+              <img src="./images/vase1.png" alt="" data-aos="zoom-in" />
             </div>
           </div>
           <div class="col-12 col-lg-4 filtr-item" data-category="3">
@@ -250,7 +250,7 @@
                 <h5>$229.99</h5>
                 <p>$280</p>
               </div>
-              <img src="./images/chair2.png" alt="" />
+              <img src="./images/chair2.png" alt="" data-aos="zoom-in"/>
             </div>
           </div>
         </div>
@@ -422,87 +422,7 @@
     <script src="./scripts/slick.min.js"></script>
     <script src="./scripts/jquery.filterizr.min.js"></script>
     <script src="./scripts/aos.js"></script>
+    <script src="./scripts/custom.js"></script>
 
-    <script>
-      $(".my-slider").slick({
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 4000,
-        arrows: false,
-        responsive: [
-          {
-            breakpoint: 800,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
-            },
-          },
-          {
-            breakpoint: 400,
-            settings: {
-              arrows: false,
-              slidesToShow: 1,
-              slidesToScroll: 1,
-            },
-          },
-        ],
-      });
-
-      $(".slides").slick({
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 4000,
-        arrows: false,
-        responsive: [
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-            },
-          },
-          {
-            breakpoint: 400,
-            settings: {
-              arrows: false,
-              slidesToShow: 1,
-              slidesToScroll: 1,
-            },
-          },
-        ],
-      });
-
-      $(".prev").click(function () {
-        $(".slides").slick("slickPrev");
-      });
-      $(".next").click(function () {
-        $(".slides").slick("slickNext");
-      });
-    </script>
-
-    <script>
-      $(document).ready(function () {
-        $(".products nav li").on("click", function () {
-          $(this).addClass("active");
-          $(this).siblings(".active").removeClass("active");
-        });
-        var filterizd = $(".filtr-container").filterizr({
-          //options object
-        });
-      });
-    </script>
-    <script>
-      AOS.init({
-  duration: 1000
-});
-    </script>
   </body>
 </html>
