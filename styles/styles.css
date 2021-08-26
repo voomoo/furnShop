@@ -434,12 +434,32 @@
     }
 }
 
-@media only screen and (max-width: 425px){
+@media only screen and (max-width: 576px){
+    .hero-section{
+        height: 90vh;    
+    }
+
+    .partner-section .my-slider .item{
+        font-size: 24px;
+    }
+
+    .deal-section h3{
+        max-width: 100%;
+    }
+
+    .deal-section p{
+        max-width: 300px;
+    }
+
     .about-us img{
         float: none;
-        max-width: 410px;
+        max-width: 300px;
         margin-top: 50px;
     }
+}
+
+@media only screen and (max-width: 425px){
+    
 
     .testimonial .slide img{
         max-width: 300px;
