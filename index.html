@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/all.min.css" />
     <link rel="stylesheet" href="./styles/slick.css" />
+    <link rel="stylesheet" href="./styles/aos.css">
+
   </head>
 
   <body>
@@ -39,16 +41,16 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
               <li class="nav-item mx-3">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#hero-section">Home</a>
               </li>
               <li class="nav-item mx-3">
-                <a class="nav-link" aria-current="page" href="#">About</a>
+                <a class="nav-link" aria-current="page" href="#about-us">About</a>
               </li>
               <li class="nav-item mx-3">
-                <a class="nav-link" aria-current="page" href="#">Features</a>
+                <a class="nav-link" aria-current="page" href="#products">Features</a>
               </li>
               <li class="nav-item mx-3">
-                <a class="nav-link" aria-current="page" href="#">Contact</a>
+                <a class="nav-link" aria-current="page" href="#footer">Contact</a>
               </li>
             </ul>
           </div>
@@ -56,9 +58,9 @@
       </nav>
     </section>
 
-    <section class="hero-section">
+    <section class="hero-section" id="hero-section">
       <div class="container">
-        <div class="hero-text">
+        <div class="hero-text" data-aos="fade-right">
           <img src="./images/hero-dots.png" alt="" />
           <h2 class="hero-title">We Help You Make Modern Interior</h2>
           <p class="hero-para">
@@ -107,17 +109,17 @@
             <h3>Hot <br />deals for you</h3>
             <p>Online shopping for retail sales direct to consumers</p>
           </div>
-          <div class="col-6 col-sm-4 col-lg-3 mx-auto">
+          <div class="col-6 col-sm-4 col-lg-3" data-aos="zoom-in">
             <i class="fas fa-fire"></i>
             <h6>15% Cashback</h6>
             <p>Online shopping for retail sales direct to consumers</p>
           </div>
-          <div class="col-6 col-sm-4 col-lg-3">
+          <div class="col-6 col-sm-4 col-lg-3" data-aos="zoom-in">
             <i class="fas fa-fire"></i>
             <h6>30-Day Terms</h6>
             <p>Online shopping for retail sales direct to consumers</p>
           </div>
-          <div class="col-6 col-sm-4 col-lg-3">
+          <div class="col-6 col-sm-4 col-lg-3" data-aos="zoom-in">
             <i class="fas fa-fire"></i>
             <h6>Save Money</h6>
             <p>Online shopping for retail sales direct to consumers</p>
@@ -126,7 +128,7 @@
       </div>
     </section>
 
-    <section class="about-us">
+    <section class="about-us" id="about-us">
       <div class="container">
         <div class="title d-flex justify-content-between align-items-center">
           <h2>About Us</h2>
@@ -137,7 +139,7 @@
           integrity and excellence.
         </p>
         <div class="row about-my-section justify-content-between justify-content-md-center">
-          <div class="col-6 col-md-6 col-lg-3">
+          <div class="col-6 col-md-6 col-lg-3" data-aos="fade-right">
             <div class="about-item mx-auto">
               <h2>1.</h2>
               <h5>Who We Are</h5>
@@ -155,7 +157,7 @@
               </p>
             </div>
           </div>
-          <div class="col-6 col-md-6 col-lg-3">
+          <div class="col-6 col-md-6 col-lg-3" data-aos="fade-right">
             <div class="about-item mx-auto">
               <h2>3.</h2>
               <h5>How Do We Help</h5>
@@ -173,14 +175,14 @@
               </p>
             </div>
           </div>
-          <div class="col-12 col-md-12 col-lg-6">
+          <div class="col-12 col-md-12 col-lg-6" data-aos="fade-left">
             <img src="./images/furn-grid.png" alt="" />
           </div>
         </div>
       </div>
     </section>
 
-    <section class="products">
+    <section class="products" id="products">
       <div class="container">
         <h2>Products</h2>
         <ul class="my-5 mx-auto">
@@ -255,7 +257,7 @@
       </div>
     </section>
 
-    <section class="testimonial">
+    <section class="testimonial" id="testimonial">
       <div class="container">
         <h2>What our happy client say</h2>
         <p>
@@ -347,7 +349,7 @@
       </div>
     </section>
 
-    <section class="footer">
+    <section class="footer" id="footer">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 col-md-8">
@@ -405,7 +407,13 @@
             </p>
         </div>
         </div>
+        <hr>
+        <div class="d-flex justify-content-between">
+          <small>&copy; 2021 <a href="https://github.com/voomoo" target="blank">Rakiubl Hasan.</a> All Rights Reserved</small>
+          <small>Design from taken from <a href="https://dribbble.com/shots/16169012-website-landing-page-design?utm_source=Clipboard_Shot&utm_campaign=arshakir&utm_content=website%20landing%20page%20design&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=arshakir&utm_content=website%20landing%20page%20design&utm_medium=Social_Share" target="blank">AR Shakir</a></small>
+        </div>
       </div>
+      
     </section>
 
     <!-- all javascripts goes here -->
@@ -413,6 +421,7 @@
     <script src="./scripts/bootstrap.bundle.min.js"></script>
     <script src="./scripts/slick.min.js"></script>
     <script src="./scripts/jquery.filterizr.min.js"></script>
+    <script src="./scripts/aos.js"></script>
 
     <script>
       $(".my-slider").slick({
@@ -489,6 +498,11 @@
           //options object
         });
       });
+    </script>
+    <script>
+      AOS.init({
+  duration: 1000
+});
     </script>
   </body>
 </html>
