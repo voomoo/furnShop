@@ -331,7 +331,7 @@
 @media only screen and (max-width: 1440px) {
 
     .hero-section{
-        height: 90vh;    
+        height: 70vh;    
     }
 
     .hero-section .container{
@@ -378,10 +378,10 @@
     }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
 
     .hero-section{
-        height: 70vh;    
+        height: 50vh;    
     }
 
     .hero-section .container{
@@ -389,8 +389,16 @@
     }
 
     .hero-text{
-        right: 30px;
+        right: 0px;
         top: 30px;
+    }
+
+    .hero-section i{
+        color: white;
+        font-size: 36px;
+        padding: 25px;
+        bottom: -30px;
+        right: 40px;
     }
 
     .about-us>.row{
@@ -400,7 +408,9 @@
     .about-us img{
         float: none;
         max-width: 450px;
+        margin: 0 auto;
         margin-top: 50px;
+        display: flex;
     }
 
     .about-item{
@@ -409,5 +419,36 @@
 
     .testimonial .slide{
         padding: 50px 0px;
+    }
+
+    .testimonial .slide .row{
+        justify-content: space-between;
+    }
+
+    .testimonial .slide p{
+        margin-right: 20px;
+    }
+
+    .testimonial .slide-control i{
+        bottom: 0px;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .about-us img{
+        float: none;
+        max-width: 410px;
+        margin-top: 50px;
+    }
+
+    .testimonial .slide img{
+        max-width: 300px;
+        margin: 20px auto;
+    }
+
+    .testimonial .slide-control i{
+        margin-right: 20px;
+        position: relative;
+        bottom: 20px;
     }
 }
